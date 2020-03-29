@@ -1,0 +1,27 @@
+Package: r2k
+Type: Package
+Title: R Functions Modified to Immediately Return Kable Outputs
+Version: 1.1.1
+Date: 2020-03-28
+Author: Dane R. Van Domelen
+Maintainer: Dane R. Van Domelen <vandomed@gmail.com>
+Description: For example, table_r2k(x, y) is like table(x, y) but produces a 
+    kable output that prints neatly to the RStudio Viewer or to an R Markdown 
+    document. Other functions include lm_r2k, glm_r2k, gee_r2k, coxph_r2k, 
+    and svyglm_r2k. Also includes a generic r2k function for converting R 
+    objects to kables.
+License: GPL (>=3)
+LazyData: true
+Encoding: UTF-8
+Depends: dplyr, knitr
+Imports: 
+    gee, 
+    kableExtra, 
+    MASS, 
+    stats, 
+    survey, 
+    survival
+RoxygenNote: 6.1.1
+Suggests: 
+    rmarkdown
+VignetteBuilder: knitr

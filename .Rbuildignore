@@ -1,0 +1,12 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^.Rhistory$
+^LICENSE$
+^README.*$
+^Thumbs.db$
+^marketing$
+^misc$
+^R\archived$
+^R-development$
+^.travis.yml$
+logbook_r2k$

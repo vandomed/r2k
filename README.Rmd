@@ -1,0 +1,75 @@
+---
+output: github_document
+title: "Quick Kable Outputs with 'r2k'"
+author: "Dane Van Domelen <br> vandomed@gmail.com"
+date: "`r Sys.Date()`"
+bibliography: vignettes/bibliography.bib
+always_allow_html: true
+nocite: | 
+  @gee, 
+  @Kmisc, 
+  @knitr1,
+  @knitr2,
+  @knitr3,
+  @survey, 
+  @survey-paper, 
+  @survival-package, 
+  @survival-book
+  
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>", 
+  message = FALSE
+)
+
+# Load packages
+library("r2k")
+library("knitr")
+
+# Set xtable options
+options("xtable.caption.placement" = "top", 
+        "xtable.include.rownames" = TRUE, 
+        "xtable.comment" = FALSE)
+```
+
+
+## Installation
+
+You can install and load **r2k** from GitHub via the following code:
+
+```{r, eval = FALSE}
+devtools::install_github("vandomed/r2k")
+library("r2k")
+```
+
+
+## Concept
+
+The idea is to provide functions that work just like a common base R function, like `table` and `glm`, but that immediately produce neat `kable` outputs. For example, you can call `table_r2k` just as you would `table`, but the result will be a `kable` that is immediately printed to the RStudio Viewer, and which is immediately ready for printing in an R Markdown document.
+
+
+## Functions
+
+### table_r2k
+
+Here's an example:
+
+To summarize a fitted generalized linear model, simply call `glm_v` as you would `glm`. The result will be a formatted summary table printed to the RStudio Viewer. Here's an example for logistic regression:
+
+```{r eval = FALSE}
+table_r2k(mtcars$cyl, mtcars$gear)
+```
+
+![Figure](vignettes/table_r2k.PNG)
+
+From here, you can "snip" the table and save it as a figure (as I did for this README) or copy directly from the Viewer and paste outside of R.
+
+Alternatively, you can call `table_r2k` within an R Markdown document, and the resulting table should print very nicely without any extra steps. 
+
+
+## References
