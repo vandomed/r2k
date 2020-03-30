@@ -9,7 +9,7 @@
 #' Package: \tab r2k \cr
 #' Type: \tab Package \cr
 #' Version: \tab 1.1.1 \cr
-#' Date: \tab 2020-03-28 \cr
+#' Date: \tab 2020-03-29 \cr
 #' License: \tab GPL-3 \cr
 #' }
 #'
@@ -25,5 +25,5 @@
 #' @import stats
 #' @importFrom survey svyby svychisq svyglm svymean svyquantile svyranktest svytable svyttest svyvar
 #' @importFrom utils capture.output
-#' @name r2k
+#' @name r2k-package
 NULL

@@ -2,7 +2,7 @@ Package: r2k
 Type: Package
 Title: R Functions Modified to Immediately Return Kable Outputs
 Version: 1.1.1
-Date: 2020-03-28
+Date: 2020-03-29
 Author: Dane R. Van Domelen
 Maintainer: Dane R. Van Domelen <vandomed@gmail.com>
 Description: For example, table_r2k(x, y) is like table(x, y) but produces a 

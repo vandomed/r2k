@@ -1,7 +1,7 @@
 Quick Kable Outputs with ‘r2k’
 ================
 Dane Van Domelen <br> <vandomed@gmail.com>
-2020-03-28
+2020-03-29
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
@@ -27,11 +27,8 @@ Markdown document.
 
 ### table\_r2k
 
-Here’s an example:
-
-To summarize a fitted generalized linear model, simply call `glm_v` as
-you would `glm`. The result will be a formatted summary table printed to
-the RStudio Viewer. Here’s an example for logistic regression:
+If you swap in `table_r2k` for `table`, the results will print neatly to
+the Viewer:
 
 ``` r
 table_r2k(mtcars$cyl, mtcars$gear)
@@ -39,13 +36,14 @@ table_r2k(mtcars$cyl, mtcars$gear)
 
 ![Figure](vignettes/table_r2k.PNG)
 
-From here, you can “snip” the table and save it as a figure (as I did
+From there, you can “snip” the table and save it as a figure (as I did
 for this README) or copy directly from the Viewer and paste outside of
-R.
+R. In my experience, output from the Viewer pastes pretty nicely into
+Microsoft Word, Excel, and PowerPoint.
 
-Alternatively, you can call `table_r2k` within an R Markdown document,
-and the resulting table should print very nicely without any extra
-steps.
+Alternatively, if you call `table_r2k` within an R Markdown document,
+the resulting table will appear correctly in the output file without any
+extra steps.
 
 ## References
 
