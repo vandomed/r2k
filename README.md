@@ -1,4 +1,4 @@
-Quick Kable Outputs with ‘r2k’
+Quick Kable Outputs
 ================
 Dane Van Domelen <br> <vandomed@gmail.com>
 2020-03-29
@@ -44,6 +44,20 @@ Microsoft Word, Excel, and PowerPoint.
 Alternatively, if you call `table_r2k` within an R Markdown document,
 the resulting table will appear correctly in the output file without any
 extra steps.
+
+### r2k
+
+The namesake function is very simple, it just converts R objects to
+kables by calling `kable` and `kable_styling`. To print out the
+4-cylinder cars in `mtcars`, using **dplyr** and piping:
+
+``` r
+mtcars %>%
+  dplyr::filter(cyl == 4) %>%
+  r2k()
+```
+
+![Figure](vignettes/r2k.PNG)
 
 ## References
 

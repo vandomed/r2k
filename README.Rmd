@@ -1,6 +1,6 @@
 ---
 output: github_document
-title: "Quick Kable Outputs with 'r2k'"
+title: "Quick Kable Outputs"
 author: "Dane Van Domelen <br> vandomed@gmail.com"
 date: "`r Sys.Date()`"
 bibliography: vignettes/bibliography.bib
@@ -68,6 +68,19 @@ table_r2k(mtcars$cyl, mtcars$gear)
 From there, you can "snip" the table and save it as a figure (as I did for this README) or copy directly from the Viewer and paste outside of R. In my experience, output from the Viewer pastes pretty nicely into Microsoft Word, Excel, and PowerPoint. 
 
 Alternatively, if you call `table_r2k` within an R Markdown document, the resulting table will appear correctly in the output file without any extra steps.
+
+
+### r2k
+
+The namesake function is very simple, it just converts R objects to kables by calling `kable` and `kable_styling`. To print out the 4-cylinder cars in `mtcars`, using **dplyr** and piping:
+
+```{r eval = FALSE}
+mtcars %>%
+  dplyr::filter(cyl == 4) %>%
+  r2k()
+```
+
+![Figure](vignettes/r2k.PNG)
 
 
 ## References
