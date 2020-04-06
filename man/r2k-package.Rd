@@ -15,7 +15,7 @@ includes a generic r2k function for converting R objects to kables.
 Package: \tab r2k \cr
 Type: \tab Package \cr
 Version: \tab 1.1.1 \cr
-Date: \tab 2020-03-29 \cr
+Date: \tab 2020-03-30 \cr
 License: \tab GPL-3 \cr
 }
 }

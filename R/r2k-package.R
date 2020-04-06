@@ -9,7 +9,7 @@
 #' Package: \tab r2k \cr
 #' Type: \tab Package \cr
 #' Version: \tab 1.1.1 \cr
-#' Date: \tab 2020-03-29 \cr
+#' Date: \tab 2020-03-30 \cr
 #' License: \tab GPL-3 \cr
 #' }
 #'
@@ -18,12 +18,10 @@
 #'
 #'
 #' @docType package
-#' @importFrom dplyr %>%
-#' @importFrom kableExtra add_header_above collapse_rows column_spec kable_styling
+#' @importFrom kableExtra %>% add_header_above collapse_rows column_spec kable_styling
 #' @importFrom knitr kable
 #' @import MASS
 #' @import stats
-#' @importFrom survey svyby svychisq svyglm svymean svyquantile svyranktest svytable svyttest svyvar
-#' @importFrom utils capture.output
+#' @importFrom survey svyby svyglm svytable
 #' @name r2k-package
 NULL
