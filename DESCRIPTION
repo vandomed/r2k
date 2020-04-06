@@ -14,13 +14,13 @@ LazyData: true
 Encoding: UTF-8
 Depends: knitr
 Imports: 
-    kableExtra, 
-    stats
-RoxygenNote: 6.1.1
-Suggests: 
     gee, 
+    kableExtra,
     MASS, 
-    rmarkdown, 
+    stats, 
     survey, 
     survival
+RoxygenNote: 6.1.1
+Suggests: 
+    rmarkdown
 VignetteBuilder: knitr
