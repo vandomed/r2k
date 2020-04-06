@@ -10,7 +10,7 @@ table_k(...)
 \item{...}{Arguments to pass to \code{\link[base]{table}}.}
 }
 \value{
-\code{\link[base]{kable}} object.
+\code{\link[knitr]{kable}} object.
 }
 \description{
 Works just like \code{\link[base]{table}}, but returns a formatted

@@ -7,7 +7,7 @@
 #' @param ... Arguments to pass to \code{\link[base]{table}}.
 #'
 #'
-#' @return \code{\link[base]{kable}} object.
+#' @return \code{\link[knitr]{kable}} object.
 #'
 #'
 #' @examples
